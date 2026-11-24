@@ -7,13 +7,13 @@
 <title>ResistMap — Antimicrobial Resistance Observatory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css?v=20261124-2">
+<link rel="stylesheet" href="./style.css?v=20261124-3">
 </head>
 <body>
 <div class="page-shell">
 <header class="topbar">
   <a class="brand" href="#"><span class="brand-symbol">r.</span><span class="brand-name">resist<span>map</span></span></a>
-  <nav aria-label="Main navigation"><a class="nav-active" href="#explore">Observatory</a><a href="#method">The science</a><a href="#about">About</a></nav>
+  <nav aria-label="Main navigation"><a class="nav-active" href="#explore">Observatory</a><a href="#method">The science</a><a href="#about">About</a><a href="#credits">Credits</a></nav>
   <div class="top-meta"><span class="live-dot"></span><span>OPEN DATA OBSERVATORY</span><span class="meta-year">2026</span></div>
   <button class="menu-btn" aria-label="Open menu">☰</button>
 </header>
@@ -31,7 +31,7 @@
     <div class="visual-foot"><span>FIG. 01</span><span>AN INVISIBLE PRESSURE, MADE VISIBLE.</span></div>
   </div>
 </section>
-<section class="stats-strip" id="about">
+<section class="stats-strip" id="collection">
   <div class="stat-intro"><span class="micro-label">THE COLLECTION</span><p>Two indicators.<br>One urgent story.</p></div>
   <article class="stat"><span class="micro-label">PATHOGEN INDICATORS</span><strong>02</strong><small>ESBL E. coli / MRSA</small></article>
   <article class="stat"><span class="micro-label">OBSERVATION WINDOW</span><strong>16<span>—</span>22</strong><small>Annual observations</small></article>
@@ -57,8 +57,51 @@
 </section>
 <section class="method" id="method"><div class="method-heading"><div class="eyebrow"><span>READING THE FINE PRINT / 003</span><i></i></div><h2>Good data<br>needs <em>context.</em></h2><p>ResistMap is an exploration tool, not a clinical decision system. A percentage is meaningful only when you understand what was tested and how the data were collected.</p><a href="https://ourworldindata.org/antibiotic-resistance" target="_blank" rel="noreferrer">THE WIDER AMR PICTURE ↗</a></div><div class="method-list"><article><span>01</span><div><h3>ESBL-producing E. coli</h3><p>Extended-spectrum beta-lactamase (ESBL) is an enzyme that can make bacteria resistant to several important beta-lactam antibiotics. This indicator tracks E. coli bloodstream infection isolates resistant to third-generation cephalosporins.</p></div></article><article><span>02</span><div><h3>Methicillin-resistant S. aureus</h3><p>MRSA is a strain of Staphylococcus aureus resistant to methicillin and related antibiotics. This indicator describes MRSA among tested S. aureus bloodstream infection isolates.</p></div></article><article><span>03</span><div><h3>What the percentage means</h3><p>These figures refer to patients seeking care whose blood sample was taken and tested. They do not represent every infection, every patient, or the entire population of a country. Testing and coverage may vary.</p></div></article></div></section>
 <section class="sources"><div><span class="micro-label">DATA PROVENANCE</span><p>Curated by Our World in Data from the WHO Global Antimicrobial Resistance and Use Surveillance System (GLASS).</p></div><a href="https://ourworldindata.org/grapher/share-of-e-coli-bloodstream-infections-due-to-antimicrobial-resistant-bacteria" target="_blank" rel="noreferrer">E. COLI DATASET ↗</a><a href="https://ourworldindata.org/grapher/share-of-s-aureus-bloodstream-infections-that-are-resistant-to-antibiotics" target="_blank" rel="noreferrer">MRSA DATASET ↗</a></section>
+
+<section class="site-notes" aria-label="About and site information">
+  <div class="notes-heading"><div class="eyebrow"><span>THE PROJECT / 004</span><i></i><span>TRANSPARENCY &amp; ACCOUNTABILITY</span></div><h2>Know what sits<br><em>behind the numbers.</em></h2><p>How ResistMap is made, what it does with information, and where its material comes from.</p></div>
+  <div class="notes-grid">
+    <article class="note-card note-about" id="about">
+      <span class="note-index">01 / ABOUT RESISTMAP</span>
+      <h3>A clearer lens on resistance.</h3>
+      <p>ResistMap is an independent educational data-exploration project built to make selected antimicrobial-resistance surveillance indicators easier to explore and interpret. It brings two bloodstream-infection indicators into one place: third-generation cephalosporin resistance in <em>Escherichia coli</em> and methicillin resistance in <em>Staphylococcus aureus</em>.</p>
+      <p>Explore trends, compare the latest available country observations, and inspect the underlying records. The project is intended for learning and public understanding. It is not affiliated with the World Health Organization, Our World in Data, or any public-health authority.</p>
+    </article>
+    <article class="note-card" id="privacy">
+      <span class="note-index">02 / PRIVACY POLICY</span>
+      <h3>Your privacy matters.</h3>
+      <p><strong>ResistMap does not ask you to create an account.</strong> The application has no contact form, user profile, advertising tracker, analytics tool, or database for storing personal information. Search terms and chart selections are processed in your browser and are not sent to a ResistMap server.</p>
+      <p>To display the site, your browser requests files from GitHub Pages. The page also loads typefaces from Google Fonts and photographic assets from Unsplash. Those providers may receive standard technical request information, such as your IP address and browser details, under their own privacy policies. ResistMap does not control their practices.</p>
+      <p>External links take you to third-party websites. Review their privacy policies before sharing information there. If the site's data-handling practices change, this notice will be updated.</p>
+      <p class="note-date">LAST UPDATED: 24 NOVEMBER 2026</p>
+    </article>
+    <article class="note-card" id="terms">
+      <span class="note-index">03 / TERMS OF USE</span>
+      <h3>Use the evidence responsibly.</h3>
+      <p>ResistMap is provided for general information, education, and non-commercial exploration. It is not medical advice, a diagnostic device, a clinical decision-support system, or a substitute for professional judgement. Do not use it to make decisions about an individual's care, medicines, or treatment.</p>
+      <p>We aim to present source data faithfully, but make no guarantee that the information is complete, current, error-free, or suitable for a particular purpose. Reporting coverage, laboratory practices, and surveillance methods can differ between places and years. Interpret every comparison in its source context.</p>
+      <p>Underlying datasets and third-party materials remain subject to their respective licences and terms. You are responsible for checking those terms and providing appropriate attribution when reusing material. Brand names and marks belong to their respective owners.</p>
+      <p>By using this site, you agree to use it lawfully and acknowledge these limitations. The project may be changed, suspended, or removed without notice.</p>
+      <p class="note-date">LAST UPDATED: 24 NOVEMBER 2026</p>
+    </article>
+    <article class="note-card" id="credits">
+      <span class="note-index">04 / CREDITS &amp; SOURCES</span>
+      <h3>Built on open evidence.</h3>
+      <ul class="credit-list">
+        <li><strong>Surveillance data</strong><span>Our World in Data, using data from the WHO Global Antimicrobial Resistance and Use Surveillance System (GLASS).</span></li>
+        <li><strong>E. coli indicator</strong><a href="https://ourworldindata.org/grapher/share-of-e-coli-bloodstream-infections-due-to-antimicrobial-resistant-bacteria" target="_blank" rel="noopener noreferrer">View dataset ↗</a></li>
+        <li><strong>MRSA indicator</strong><a href="https://ourworldindata.org/grapher/share-of-s-aureus-bloodstream-infections-that-are-resistant-to-antibiotics" target="_blank" rel="noopener noreferrer">View dataset ↗</a></li>
+        <li><strong>Maroon paper-texture photograph</strong><a href="https://unsplash.com/photos/a-red-background-with-a-rough-texture-of-paper-CLvkkjb-i3g" target="_blank" rel="noopener noreferrer">Valentin Salja / Unsplash ↗</a></li>
+        <li><strong>Forest foliage photograph</strong><a href="https://unsplash.com/photos/dark-green-leaves-on-a-dark-background-tynWEaMV278" target="_blank" rel="noopener noreferrer">Sujay Paul / Unsplash ↗</a></li>
+        <li><strong>Image licence</strong><a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash licence ↗</a></li>
+        <li><strong>Typography</strong><span>Playfair Display, Manrope, and DM Mono, served via Google Fonts.</span></li>
+      </ul>
+      <p class="credit-note">Data definitions, coverage, and reuse conditions should always be checked at the original source. Image attribution is provided as a courtesy; consult the linked licence for current terms.</p>
+    </article>
+  </div>
+</section>
 </main>
-<footer><a class="brand" href="#"><span class="brand-symbol">r.</span><span class="brand-name">resist<span>map</span></span></a><span>AN EDUCATIONAL DATA EXPLORER · NOT FOR CLINICAL USE</span><span>BUILT TO MAKE RESISTANCE VISIBLE.</span></footer>
+<footer><a class="brand" href="#"><span class="brand-symbol">r.</span><span class="brand-name">resist<span>map</span></span></a><span>AN EDUCATIONAL DATA EXPLORER · NOT FOR CLINICAL USE</span><nav class="footer-links" aria-label="Site information"><a href="#about">ABOUT</a><a href="#privacy">PRIVACY</a><a href="#terms">TERMS</a><a href="#credits">CREDITS</a></nav><span>BUILT TO MAKE RESISTANCE VISIBLE.</span></footer>
 </div>
-<script src="./app.js?v=20261124-2"></script>
+<script src="./app.js?v=20261124-3"></script>
 </body></html>
