@@ -1,35 +1,43 @@
 # ResistMap
 
-A Python-based interactive explorer for antimicrobial-resistance surveillance indicators.
+**An interactive web application for exploring antimicrobial-resistance (AMR) surveillance indicators.**
 
-ResistMap presents two country-level bloodstream-infection indicators:
-- Third-generation-cephalosporin-resistant Escherichia coli.
-- Methicillin-resistant Staphylococcus aureus (MRSA).
+ResistMap presents country-level bloodstream-infection resistance indicators in an accessible visual explorer. Select an indicator, follow annual observations, compare countries, and search the underlying records.
 
-Features include year and country filters, indicator selection, trend and ranked-country charts, a choropleth map, paired-indicator scatter plot, observation table and CSV export.
+## Explore the live application
+
+https://anubhutigoswami125.github.io/ResistMap/
+
+## Indicators
+
+- **ESBL E. coli:** bloodstream infection isolates resistant to third-generation cephalosporins.
+- **MRSA:** bloodstream infection isolates resistant to methicillin.
+
+## Features
+
+- Switch between the two resistance indicators.
+- Filter observations by year and country.
+- View a country-level annual trend.
+- Compare the latest available country observations.
+- Search and browse the source observations.
+
+## Data and interpretation
+
+The datasets are curated by Our World in Data from the WHO Global Antimicrobial Resistance and Use Surveillance System (GLASS).
+
+- [E. coli indicator dataset](https://ourworldindata.org/grapher/share-of-e-coli-bloodstream-infections-due-to-antimicrobial-resistant-bacteria)
+- [MRSA indicator dataset](https://ourworldindata.org/grapher/share-of-s-aureus-bloodstream-infections-that-are-resistant-to-antibiotics)
+
+The percentages refer to the specified resistant bloodstream-infection indicator among patients seeking care whose blood sample was taken and tested. They are **not population-wide prevalence estimates**. Country coverage and testing practices may differ. ResistMap is an educational data-exploration tool, not a clinical decision system; it does not diagnose infection or recommend treatment.
+
+## Technology
+
+Built with HTML, CSS, and vanilla JavaScript. The application reads the included CSV files directly in the browser; no server or Python runtime is required.
 
 ## Run locally
 
-1. Install Python 3.10 or later.
-2. Clone or download this repository.
-3. Open a terminal in the project folder.
-4. Install dependencies with: python -m pip install -r requirements.txt
-5. Start the app with: python -m streamlit run app.py
+Open `index.html` in a local static web server, or use GitHub Pages.
 
-The app downloads public CSV data from Our World in Data on first load and caches it for one hour. An internet connection is required. For offline use, place the two original CSV files in a folder named data beside app.py, retaining their original filenames.
+## Deployment
 
-## Data sources and interpretation
-
-- E. coli indicator: https://ourworldindata.org/grapher/share-of-e-coli-bloodstream-infections-due-to-antimicrobial-resistant-bacteria
-- MRSA indicator: https://ourworldindata.org/grapher/share-of-s-aureus-bloodstream-infections-that-are-resistant-to-antibiotics
-- Underlying surveillance source: WHO GLASS, as documented by Our World in Data.
-
-The percentages refer to the specified resistant bloodstream-infection indicator among patients seeking care whose blood sample was taken and tested. They are not population-wide prevalence estimates and must not be used for individual treatment decisions. Country coverage and testing practices may differ.
-
-## Project files
-
-- app.py — Streamlit application and data-processing pipeline.
-- requirements.txt — Python dependencies.
-- report_guide.md — report headings and factual prompts.
-
-ResistMap is a descriptive educational data-exploration application. It does not diagnose infection, predict individual risk, establish causation or recommend antibiotic treatment.
+GitHub Actions publishes the repository root to GitHub Pages whenever changes are pushed to the `main` branch. The workflow is defined in `.github/workflows/pages.yml`.
