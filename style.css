@@ -11,3 +11,30 @@
 @media(max-width:950px){.intro-copy{padding-left:10%;padding-right:8%}.stats-strip{padding-left:6%;padding-right:6%;grid-template-columns:1fr 1fr 1fr}.stat-intro,.stat-note{display:none}.workspace{grid-template-columns:110px 1fr;gap:18px}.chart-layout{grid-template-columns:1fr}.insight-panel{min-height:270px}.explorer,.method{padding-left:6%;padding-right:6%}}
 @media(max-width:650px){.topbar{height:65px;padding:0 5%;background:var(--green-deep)}.topbar nav,.top-meta{display:none}.menu-btn{display:block;border:1px solid var(--gold);background:none;color:var(--gold);font-size:18px;padding:4px 9px}.intro{grid-template-columns:1fr}.intro-copy{min-height:560px;padding:65px 8% 55px}.intro-visual{min-height:410px}.petri{width:260px;height:260px}.stats-strip{grid-template-columns:1fr 1fr;padding:25px 7%;gap:20px}.stat{padding-left:14px}.stat strong{font-size:33px}.explorer,.method{padding:65px 6%}.section-heading{display:block}.data-status{margin-top:20px}.workspace{grid-template-columns:1fr;gap:18px}.workspace-rail{display:grid;grid-template-columns:22px auto 1fr;align-items:center;gap:10px}.rail-title{margin:0}.rail-rule,.rail-note{display:none}.control-row{gap:8px}.segmented{width:100%}.seg{flex:1;padding:11px 7px;font-size:10px}.select-wrap{flex:1;justify-content:space-between}.select-wrap select{min-width:65px;width:100px}.lower-grid{grid-template-columns:1fr}.panel{padding:17px}.panel-head{flex-wrap:wrap}.panel-unit{max-width:130px}.method{grid-template-columns:1fr;gap:35px}.sources{padding:25px 6%;grid-template-columns:1fr;gap:14px}.sources a{width:max-content;margin-top:5px}footer{padding:23px 6%;gap:13px;flex-wrap:wrap}footer>span:last-child{display:none}.snapshot-label{margin-top:22px}.chart-bottom{flex-wrap:wrap}.compare-row{grid-template-columns:90px 1fr 45px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.site-notes{padding:94px 9% 105px;background:var(--ivory);color:var(--green);border-top:1px solid var(--gold)}
+.notes-heading{max-width:690px;margin-bottom:42px}
+.notes-heading .eyebrow{color:#80633d}
+.notes-heading h2{font:700 clamp(43px,5vw,68px)/1.02 var(--serif);letter-spacing:-.05em;color:var(--maroon);margin:22px 0 14px}
+.notes-heading h2 em{color:#987342;font-style:italic}
+.notes-heading>p{font-size:12px;line-height:1.8;color:#5c665a;max-width:480px}
+.notes-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.note-card{background:#e9ddc7;border:1px solid #b99b6a;padding:28px 30px;scroll-margin-top:95px}
+.note-about{grid-column:1/-1;background:#f7f0e3}
+.note-index{font:8px var(--mono);letter-spacing:.13em;color:#87653b}
+.note-card h3{font:700 25px/1.15 var(--serif);letter-spacing:-.025em;color:var(--maroon);margin:17px 0}
+.note-card p{font-size:11px;line-height:1.9;color:#4c5a4e;margin:0 0 12px}
+.note-card p:last-child{margin-bottom:0}
+.note-card strong{color:var(--maroon)}
+.note-date{font:8px var(--mono)!important;letter-spacing:.1em;color:#87653b!important;margin-top:19px!important}
+.credit-list{list-style:none;padding:0;margin:18px 0 0}
+.credit-list li{display:grid;grid-template-columns:minmax(125px,.8fr) 1.2fr;gap:15px;padding:12px 0;border-top:1px solid #cdbb9e;font-size:10px;line-height:1.65;color:#4c5a4e}
+.credit-list li strong{font:700 10px var(--sans);color:var(--maroon)}
+.credit-list a{color:#76532a;text-decoration:none;border-bottom:1px solid #b99b6a;width:max-content;max-width:100%}
+.credit-list a:hover{color:var(--maroon)}
+.note-card .credit-note{font-size:9px;color:#776b59;margin-top:17px}
+.footer-links{display:flex;gap:18px;align-items:center}
+.footer-links a{color:var(--ivory-dim);text-decoration:none;font:8px var(--mono);letter-spacing:.1em}
+.footer-links a:hover{color:var(--gold-light)}
+@media(max-width:950px){.site-notes{padding-left:6%;padding-right:6%}}
+@media(max-width:650px){.site-notes{padding:65px 6%}.notes-grid{grid-template-columns:1fr}.note-about{grid-column:auto}.note-card{padding:23px 20px}.credit-list li{grid-template-columns:1fr;gap:4px}.footer-links{width:100%;justify-content:space-between;order:3}}
