@@ -38,3 +38,21 @@
 .footer-links a:hover{color:var(--gold-light)}
 @media(max-width:950px){.site-notes{padding-left:6%;padding-right:6%}}
 @media(max-width:650px){.site-notes{padding:65px 6%}.notes-grid{grid-template-columns:1fr}.note-about{grid-column:auto}.note-card{padding:23px 20px}.credit-list li{grid-template-columns:1fr;gap:4px}.footer-links{width:100%;justify-content:space-between;order:3}}
+
+:root{--ivory:#c9d8c8;--ivory-dim:#a9bea9;--paper:#15382d;--paper-2:#1b4435;--maroon:#581629;--maroon-deep:#310b19;--green:#12382c;--green-deep:#091f19;--gold:#c5a46a;--gold-light:#dfc58f;--ink:#c9d8c8;--muted:#91a795;--line:rgba(197,164,106,.34)}
+body,.page-shell{background:#091f19;color:#c9d8c8}.topbar{background:linear-gradient(90deg,#310b19 0 50%,#091f19 50% 100%)}
+.stats-strip{background:#15382d;color:#c9d8c8;border-color:#c5a46a}.stat-intro .micro-label,.stat .micro-label,.stat-intro p,.stat strong{color:#dfc58f}.stat small,.stat-note{color:#c0d0bf}.stat,.stat-note{border-color:#846a49}
+.explorer{background:#091f19;background-image:radial-gradient(ellipse at 5% 0%,#1d4938aa,transparent 42%),radial-gradient(ellipse at 95% 70%,#58162955,transparent 45%)}.section-heading p{color:#b7c8b6}
+.panel{background:#15382d;color:#c9d8c8;border:1px solid #92764e;box-shadow:0 14px 35px #0004}.panel h3,.insight-title{color:#dfc58f}.panel-kicker,.panel-unit,.mono,.chart-bottom,.panel-foot,.table-foot{color:#b2c4b0}.chart-legend{color:#c0d0bf}
+.insight-panel{background:#581629;color:#d2dfcf;border-color:#c5a46a}.insight-panel p{color:#e0c9c0}.insight-panel .panel-kicker,.insight-foot,.snapshot-label{color:#dfc58f}.snapshot-value{color:#e1d0c5}.compare-name,.compare-val{color:#dfc58f}
+.bar-track{background:#294b3d}.bar-fill{background:#7b2038;border-color:#dfc58f}td{color:#c4d3c1;border-color:#315343}td:last-child,th{color:#dfc58f}th{border-color:#846a49}
+.search-input{background:#0c281f;border:1px solid #92764e;color:#d5e0d1;font:700 12px var(--sans)}.search-input::placeholder{color:#9db19d}.search-input:focus{border-color:#dfc58f}.show-more{color:#dfc58f}
+.method{background:#310b19;border-color:#c5a46a}.method-heading>p,.method-list p{color:#d0bcb6}.method-list,.method-list article{border-color:#8c5b5c}
+.sources{background:#12382c;border-color:#c5a46a}.sources p{color:#c2d1c0}.sources a{color:#dfc58f}footer{background:#091f19;color:#b4c5b2}footer .footer-links a{color:#c9d8c8}
+.site-notes{background:#102e25;color:#c9d8c8;border-color:#c5a46a}.notes-heading h2,.notes-heading .eyebrow{color:#dfc58f}.notes-heading>p{color:#b8c9b6}
+.note-card,.note-about{background:#173a2e;color:#c9d8c8;border:1px solid #92764e}.note-card h3{color:#dfc58f}.note-card p{color:#c0d0bf}.note-card strong{color:#e2c88e}.note-date,.note-index{color:#dfc58f!important}.credit-list li{color:#c0d0bf;border-color:#44604e}.credit-list li strong,.credit-list a{color:#dfc58f}.credit-list a{border-color:#92764e}.note-card .credit-note{color:#a9bba8}
+.topbar nav a{color:#c4d2c2}.intro-lede{color:#e0c9c0;font-weight:700}.intro-caption,.visual-foot,.eyebrow{color:#dfc58f}.visual-label{color:#d5e0d1}
+.select-wrap{background:#102e25;border-color:#92764e}.select-wrap select{color:#d5e0d1;font-weight:800}.select-wrap option{background:#12382c;color:#d5e0d1}.segmented{background:#102e25;border-color:#92764e}.seg{color:#c4d2c2;font-weight:800}.seg.active{background:#c5a46a;color:#310b19}
+.explore-link{background:#c5a46a;color:#310b19;font-weight:800}.explore-link:hover{background:#dfc58f}h1,.section-heading h2,.method-heading h2{color:#d6e0d1;font-weight:800}.note-card p,.method-list p,.sources p{font-weight:600}
+.topbar nav a{font-size:13px;font-weight:800}.top-meta,.eyebrow,.micro-label,.panel-kicker,.panel-unit,.snapshot-label,.rail-title,.data-status,.chart-bottom,.panel-foot,.sources a,th,.table-foot{font-size:10px;font-weight:700}.intro-lede{font-size:16px}.section-heading p,.method-heading>p{font-size:15px;font-weight:600}.panel h3{font-size:26px}.insight-panel p,.method-list p,.note-card p{font-size:13px;font-weight:600}.note-card h3,.method-list h3{font-size:29px;font-weight:700}.stat small{font-size:12px;font-weight:800}td{font-size:12px;font-weight:700}.seg{font-size:13px;font-weight:800}
+@media(max-width:650px){.topbar{background:#091f19}.stats-strip{background:#15382d}}
