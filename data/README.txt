@@ -1,0 +1,1 @@
+ResistMap data directory. The two CSV files are imported here from Our World in Data grapher downloads. Original sources are linked in the app footer and methodology section.
